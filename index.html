@@ -25,6 +25,7 @@
 </head>
 <body>
 
+<div id="root">
 <div class="site">
   <div class="bg">
     <div class="bg__img">
@@ -33,22 +34,26 @@
 
   <div class="site__main">
     <div class="site__left-sidebar">
-      <h2>Buy</h2>
-      <h2>Me</h2>
-      <h2>Shoes</h2>
-      <div style="margin-top: 80px;">
-        <img src="img/heart-liked.svg" alt="">
+      <div class="title">
+        <h2>Buy Me Shoes</h2>
+        <img class="title__heart" src="img/heart.svg"/>
       </div>
     </div>
 
     <div class="site__content">
       <div class="products">
+
         <div class="product">
           <div class="product__display">
-            <img class="product__img" src="img/shoe1.jpg"/>
-            <a class="product__add">
-              <img class="product__add__icon" src="img/cart-icon.svg"/>
-            </a>
+            <div class="product__img-wrapper">
+              <img class="product__img" src="img/shoes/jameson-vulc-brown-gum-orig.png"/>
+            </div>
+
+            <div className="product__control">
+              <a class="product__add">
+                <img class="product__add__icon" src="img/cart-icon.svg"/>
+              </a>
+            </div>
 
             <div class="product__price">
               $299
@@ -63,32 +68,20 @@
             <img class="product__heart" src="img/heart.svg"/>
           </div>
         </div> <!-- product -->
+
         <div class="product">
           <div class="product__display">
-            <img class="product__img" src="img/shoe1.jpg"/>
-            <a class="product__add">
-              <img class="product__add__icon" src="img/cart-icon.svg"/>
-            </a>
-
-            <div class="product__price">
-              $299
-            </div>
-          </div>
-
-          <div class="product__description">
-            <div class="product__name">
-              Marana E-Lite Marana E-Lite Marana E-Lite Marana E-Lite Marana E-Lite
+            <div class="product__img-wrapper">
+              <img class="product__img" src="img/shoes/jameson-e-lite-julian-davidson-4-black-gum-orig.png"/>
             </div>
 
-            <img class="product__heart" src="img/heart.svg"/>
-          </div>
-        </div> <!-- product -->
-        <div class="product">
-          <div class="product__display">
-            <img class="product__img" src="img/shoe1.jpg"/>
-            <a class="product__add">
-              <img class="product__add__icon" src="img/cart-icon.svg"/>
-            </a>
+            <div class="product__control">
+              <div class="adjust-qty adjust-qty--gray">
+                <a class="adjust-qty__button">-</a>
+                <div class="adjust-qty__number">3</div>
+                <a class="adjust-qty__button">+</a>
+              </div>
+            </div>
 
             <div class="product__price">
               $299
@@ -103,34 +96,25 @@
             <img class="product__heart" src="img/heart.svg"/>
           </div>
         </div> <!-- product -->
-        <div class="product">
-          <div class="product__display">
-            <img class="product__img" src="img/shoe1.jpg"/>
-            <a class="product__add">
-              <img class="product__add__icon" src="img/cart-icon.svg"/>
-            </a>
 
-            <div class="product__price">
-              $299
-            </div>
-          </div>
 
-          <div class="product__description">
-            <div class="product__name">
-              Marana E-Lite
-            </div>
 
-            <img class="product__heart" src="img/heart.svg"/>
-          </div>
-        </div> <!-- product -->
-      </div> <!-- products -->
+
+
+
+
+
+
     </div> <!-- site__content -->
   </div>
 
   <div class="site__right-sidebar">
+
     <div class="cart">
       <h3 class="cart__title">Shopping Cart</h3>
       <div class="cart__content">
+        <h3 class="cart__title cart__title--spacer">Shopping Cart</h3>
+
         <div class="cart-item">
           <div class="cart-item__top-part">
             <div class="cart-item__image">
@@ -158,7 +142,9 @@
               <a class="adjust-qty__button">+</a>
             </div>
           </div>
+
         </div> <!-- cart-item -->
+
         <div class="cart-item">
           <div class="cart-item__top-part">
             <div class="cart-item__image">
@@ -186,7 +172,9 @@
               <a class="adjust-qty__button">+</a>
             </div>
           </div>
+
         </div> <!-- cart-item -->
+
         <div class="cart-item">
           <div class="cart-item__top-part">
             <div class="cart-item__image">
@@ -214,7 +202,9 @@
               <a class="adjust-qty__button">+</a>
             </div>
           </div>
+
         </div> <!-- cart-item -->
+
         <div class="cart-item">
           <div class="cart-item__top-part">
             <div class="cart-item__image">
@@ -242,7 +232,9 @@
               <a class="adjust-qty__button">+</a>
             </div>
           </div>
+
         </div> <!-- cart-item -->
+
         <div class="cart-item">
           <div class="cart-item__top-part">
             <div class="cart-item__image">
@@ -270,122 +262,40 @@
               <a class="adjust-qty__button">+</a>
             </div>
           </div>
+
         </div> <!-- cart-item -->
-        <div class="cart-item">
-          <div class="cart-item__top-part">
-            <div class="cart-item__image">
-              <img  src="img/shoe1.jpg"/>
-            </div>
 
-            <div class="cart-item__top-part__middle">
-              <div class="cart-item__title">
-                Marana E-Lite
-              </div>
+      </div> <!-- cart__content -->
+    </div> <!-- cart -->
 
-              <div class="cart-item__price">
-                $299
-              </div>
-            </div>
-
-            <img class="cart-item__trash" src="img/trash-icon.svg"/>
-          </div> <!-- cart-item__top-part -->
-
-
-          <div class="cart-item__qty">
-            <div class="adjust-qty">
-              <a class="adjust-qty__button">-</a>
-              <div class="adjust-qty__number">2</div>
-              <a class="adjust-qty__button">+</a>
-            </div>
-          </div>
-        </div> <!-- cart-item -->
-        <div class="cart-item">
-          <div class="cart-item__top-part">
-            <div class="cart-item__image">
-              <img  src="img/shoe1.jpg"/>
-            </div>
-
-            <div class="cart-item__top-part__middle">
-              <div class="cart-item__title">
-                Marana E-Lite
-              </div>
-
-              <div class="cart-item__price">
-                $299
-              </div>
-            </div>
-
-            <img class="cart-item__trash" src="img/trash-icon.svg"/>
-          </div> <!-- cart-item__top-part -->
-
-
-          <div class="cart-item__qty">
-            <div class="adjust-qty">
-              <a class="adjust-qty__button">-</a>
-              <div class="adjust-qty__number">2</div>
-              <a class="adjust-qty__button">+</a>
-            </div>
-          </div>
-        </div> <!-- cart-item -->
-        <div class="cart-item">
-          <div class="cart-item__top-part">
-            <div class="cart-item__image">
-              <img  src="img/shoe1.jpg"/>
-            </div>
-
-            <div class="cart-item__top-part__middle">
-              <div class="cart-item__title">
-                Marana E-Lite
-              </div>
-
-              <div class="cart-item__price">
-                $299
-              </div>
-            </div>
-
-            <img class="cart-item__trash" src="img/trash-icon.svg"/>
-          </div> <!-- cart-item__top-part -->
-
-
-          <div class="cart-item__qty">
-            <div class="adjust-qty">
-              <a class="adjust-qty__button">-</a>
-              <div class="adjust-qty__number">2</div>
-              <a class="adjust-qty__button">+</a>
-            </div>
-          </div>
-        </div> <!-- cart-item -->
-      </div>
-    </div>
     <div class="checkout">
       <hr class="checkout__divider"/>
 
       <input type="text" class="checkout__coupon-input" placeholder="coupon code"></input>
-      <div class="checkout__coupon__notice">No such coupon code!</div>
 
-      <div class="checkout__item">
-        <div class="checkout__item__label">
+      <div class="checkout__line">
+        <div class="checkout__line__label">
           Discount
         </div>
 
-        <div class="checkout__item__amount">
-          -$90.02
+        <div class="checkout__line__amount">
+          -$90
         </div>
       </div>
 
-      <div class="checkout__item">
-        <div class="checkout__item__label checkout__item__label--subtotal">
+      <div class="checkout__line">
+        <div class="checkout__line__label">
           Subtotal
         </div>
 
-        <div class="checkout__item__amount checkout__item__amount--strikeout">
-          $450.12
+        <div class="checkout__line__amount checkout__line__amount--strikeout">
+          $450
         </div>
       </div>
 
-      <div class="checkout__item">
-        <div class="checkout__item__amount checkout__item__amount--saving">
-          $360.09
+      <div class="checkout__line">
+        <div class="checkout__line__amount checkout__line__amount--omg-savings">
+          $360
         </div>
       </div>
 
@@ -396,12 +306,15 @@
         </div>
       </a>
     </div> <!-- checkout -->
+
   </div> <!-- site__right-sidebar -->
 
   <a class="site__right-sidebar-toggle">
     <img src="img/arrow-icon.svg"/>
   </a>
+
 </div> <!-- site -->
+</div> <!-- #root -->
 
 </body>
 </html>
