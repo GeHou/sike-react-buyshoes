@@ -173,6 +173,7 @@ a {
 }
 
 .product__img {
+  height: 300px;
   width: 100%;
 }
 
@@ -280,6 +281,7 @@ a {
 }
 
 .cart-item__image img {
+  height: 100px;
   width: 100%;
 }
 
