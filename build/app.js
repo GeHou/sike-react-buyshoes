@@ -124,7 +124,8 @@ var Cart = React.createClass({
   displayName: "Cart",
 
   componentDidMount: function componentDidMount() {
-    var $content = document.querySelector(".cart__content");
+    // let $content = document.querySelector(".cart__content");
+    var $content = React.findDOMNode(this.refs.cat__content);
     Ps.initialize($content);
   },
   render: function render() {
@@ -138,7 +139,7 @@ var Cart = React.createClass({
       ),
       React.createElement(
         "div",
-        { className: "cart__content" },
+        { className: "cart__content", ref: "cat__content" },
         React.createElement(
           "h3",
           { className: "cart__title cart__title--spacer" },
