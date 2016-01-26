@@ -9,7 +9,7 @@ server:
 
 .PHONY: js
 js:
-	webpack --watch js/app.jsx build/app.js --module-bind "jsx=babel" --progress
+	webpack --watch js/app.jsx build/app.js --module-bind "jsx=babel" --module-bind "js=babel" --progress
 	# babel --watch js/app.jsx --out-file build/app.js
 
 .PHONY: all

@@ -1,6 +1,7 @@
 const React = require("react");
 let SiteTitle = require('./SiteTitle');
 let Products = require('./Products');
+let Cart = require('./Cart');
 let Checkout = require('./Checkout');
 
 let App = React.createClass({
@@ -35,4 +36,4 @@ let App = React.createClass({
   },
 });
 
-module.exports = App;
+module.exports = Appss;
