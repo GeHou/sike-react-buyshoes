@@ -5,8 +5,8 @@ let {cartItems, products} = require("./Data");
 
 let Cart = React.createClass({
 	componentDidMount() {
-		// let $content = document.querySelector(".cart__content");
-    let $content = React.findDOMNode(this.refs.cat__content);
+		let $content = document.querySelector(".cart__content");
+    // let $content = React.findDOMNode(this.refs.cat__content);
 		Ps.initialize($content);
 	},
 	render() {
