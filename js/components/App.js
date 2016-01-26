@@ -36,4 +36,4 @@ let App = React.createClass({
   },
 });
 
-module.exports = Appss;
+module.exports = App;
