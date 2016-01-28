@@ -1,4 +1,5 @@
 const React = require("react");
+
 let SiteTitle = React.createClass({
   render() {
     return (

@@ -1,18 +1,23 @@
 const React = require("react");
 
 let QuantityControl = React.createClass({
-	render() {
-		let {quantity} = this.props.item;
-		return(
-			<div className="cart-item__qty">
-			  <div className="adjust-qty">
-			    <a className="adjust-qty__button">-</a>
-			    <div className="adjust-qty__number">{quantity}</div>
-			    <a className="adjust-qty__button">+</a>
-			  </div>
-			</div>
-		)
-	}
+  render() {
+    let {variant} = this.props;
+    let {quantity} = this.props.item;
+
+    let className = "adjust-qty";
+    if(variant === "gray") {
+      className = "adjust-qty adjust-qty--gray";
+    }
+
+    return (
+      <div className={className}>
+        <a className="adjust-qty__button">-</a>
+        <div className="adjust-qty__number">{quantity}</div>
+        <a className="adjust-qty__button">+</a>
+      </div>
+    );
+  }
 });
 
 module.exports = QuantityControl;
